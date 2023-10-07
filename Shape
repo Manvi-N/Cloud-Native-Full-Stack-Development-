@@ -1,0 +1,59 @@
+package Shape;
+
+public class Circle {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+
+    public double calculateCircumference() {
+        return 2 * Math.PI * radius;
+    }
+}
+package Shape;
+
+public class Square {
+    private double side;
+
+    public Square(double side) {
+        this.side = side;
+    }
+
+    public double calculateArea() {
+        return side * side;
+    }
+
+    public double calculatePerimeter() {
+        return 4 * side;
+    }
+}
+package Shape;
+
+public class Triangle {
+    private double base;
+    private double height;
+    private double side1;
+    private double side2;
+    private double side3;
+
+    public Triangle(double base, double height, double side1, double side2, double side3) {
+        this.base = base;
+        this.height = height;
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
+    }
+
+    public double calculateArea() {
+        return 0.5 * base * height;
+    }
+
+    public double calculatePerimeter() {
+        return side1 + side2 + side3;
+    }
+}
